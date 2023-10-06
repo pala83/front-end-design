@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/icons/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="contenedor">
+        
+        <!-- Cover Box -->
+        <div class="cover" id="registro">
+            <!-- Sign Up Section -->
+            <h1 class="titulo-principal sign-up">Bienvenido a maxijuegos</h1>
+            <p class="texto-boton sign-up">Un sitio web dedicado a juegos, donde podrás jugar, comprar, volver a jugar, comprar nuevamente para poder seguir jugando, aburrirte, navegar, descubrir nuevos juegos, intentar comprar nuevos juegos, jugar nuevos juegos, jugar juegos viejos, intentar hackear el sitio, aquí no tenemos el GTA.</p>
+            <p class="texto-boton sign-up">¿No tenes cuenta?</p>
+            <a class="boton-sesion sign-up" href="#registro">Registrate</a>
+            <!-- Sign In Section -->
+            <h1 class="titulo-principal sign-in">Bienvenido a maxijuegos</h1>
+            <p class="texto-boton sign-in">Un sitio web dedicado a juegos, donde podrás jugar, comprar, volver a jugar, comprar nuevamente para poder seguir jugando, aburrirte, navegar, descubrir nuevos juegos, intentar comprar nuevos juegos, jugar nuevos juegos, jugar juegos viejos, intentar hackear el sitio, aquí no tenemos el GTA.</p>
+            <p class="texto-boton sign-in">¿Ya tenes cuenta?</p>
+            <a class="boton-sesion sign-in" href="#logueo">Inicia sesión</a>
+        </div>
+        <!-- Login Box -->
+        <div class="login">
+            <img src="static/icons/Logo grande.svg" alt="">
+            <p class="texto-boton">Ingrese su nombre de usuario y contraseña</p>
+            <form action="home.html" class="login-form">
+                <input type="text" placeholder="Usuario" required><br>
+                <input type="password" placeholder="Contraseña" required><br>
+                <a class="boton-terciario" href="#">¡Olvide mi usuario o contraseña!</a><br>
+                <button class="boton-primario" type="submit">Iniciar sesion</button>
+                <p class="texto-boton">Logueate con tu red social favorita</p>
+                <div class="redes">
+                    <a class="bo" href="www.facebook.com" target="_blank">
+                        <img class="social-login" src="static/icons/devicon_facebook.svg" alt="facebook">
+                    </a>
+                    <a href="www.google.com" target="_blank">
+                        <img class="social-login" src="static/icons/devicon_google.svg" alt="google">
+                    </a>
+                    <a href="www.instagram.com" target="_blank">
+                        <img class="social-login" src="static/icons/skill-icons_instagram.svg" alt="">
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!-- Register Box -->
+        <div class="register">
+            <img src="static/icons/Logo grande.svg" alt="">
+            <form id="form-registro" class="login-form">
+                <p class="texto-boton rq">Campos requeridos</p>
+                <div class="input-register"><span></span><input id="in-nombre" type="text" placeholder="Nombre" required></div>
+                <div class="input-register"><span></span><input id="in-apellido" type="text" placeholder="Apellido" required></div>
+                <div class="input-nick"><span></span><input id="in-nick" type="text" placeholder="Nickname"></div>
+                <div class="input-register"><span></span><input id="in-fecha" type="date" required></div>
+                <div class="input-register inp-mail"><input id="in-mail" type="email" placeholder="mail@example.com" required><span></span></div>
+                <div class="input-register"><input id="in-ppas" type="password" placeholder="Contraseña" required><span></span></div>
+                <div class="input-register"><input id="in-rpas" type="password" placeholder="Repetir cont..." required><span></span></div>
+                <button class="boton-primario" type="submit">Registrarse</button>
+            </form>
+            <p class="warnings" id="warnings"> </p>
+        </div>
+    </main> <!-- END Container -->
+    <script src="script.js"></script>
+</body>
+</html>

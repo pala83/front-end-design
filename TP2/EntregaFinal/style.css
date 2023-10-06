@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@font-face {
+    font-family: "Nunito";
+    src: url("static/tipografia/nunito_regular.woff");
+}
+@font-face {
+    font-family: "Nunito bold";
+    src: url("static/tipografia/nunito_bold.woff");
+}
+@font-face {
+    font-family: "Nunito thin";
+    src: url("static/tipografia/nunito_thin.woff");
+}
+@font-face {
+    font-family: "Nunito extra thin";
+    src: url("static/tipografia/nunito_extra_thin.woff2");
+}
+
+:root{
+    --primario-w3: hsl(250,60%,95%);
+    --primario-w2: hsl(250,60%,85%);
+    --primario-w1: hsl(250,60%,70%);
+    --primario: hsl(250,60%,50%);
+    --primario-b1: hsl(250,60%,30%);
+    --primario-b2: hsl(250,60%,15%);
+    --primario-b3: hsl(250,60%,5%);
+
+    --secundario-w3: hsl(270, 65%,95%);
+    --secundario-w2: hsl(270, 65%,85%);
+    --secundario-w1: hsl(270, 65%,70%);
+    --secundario: hsl(270, 65%,50%);
+    --secundario-b1: hsl(270, 65%,30%);
+    --secundario-b2: hsl(270, 65%,15%);
+    --secundario-b3: hsl(270, 65%,5%);
+
+    --acento-w3: hsl(40,100%,95%);
+    --acento-w2: hsl(40,100%,85%);
+    --acento-w1: hsl(40,100%,70%);
+    --acento: hsl(40,100%,50%);
+    --acento-b1: hsl(40,100%,30%);
+    --acento-b2: hsl(40,100%,15%);
+    --acento-b3: hsl(40,100%,5%);
+
+    --nunito: 'Nunito', sans-serif;
+    --nunito-thin: 'Nunito thin', sans-serif;
+    --nunito-bold: 'Nunito bold', sans-serif;
+    --nunito-extra-thin: 'Nunito extra thin', sans-serif;
+    --h1-size: 4rem;
+    --h2-size: 3.5rem;
+    --h3-size: 3rem;
+    --h4-size: 2rem;
+    --p1-size: 1rem;
+    --p2-size: 0.938rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-principal, .titulo-secundario, .titulo-terciario, .parrafo-resaltado{
+    font-family: var(--nunito-bold);
+}
+
+.titulo-principal{
+    font-size: 56px;
+}
+.titulo-secundario{
+    font-size: 40px;
+}
+.titulo-terciario{
+    font-size: 30px;
+}
+.parrafo-resaltado{
+    font-size: 22px;
+}
+.parrafo{
+    font-family: var(--nunito);
+    font-size: 22px;
+}
+.texto-boton, .boton-primario, .boton-secundario, .boton-terciario, .boton-sesion{
+    font-family: var(--nunito-thin);
+    font-size: 18px;
+}
+.detalle{
+    font-family: var(--nunito-extra-thin);
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--primario-b2);
+}
+
+
+/* ========================== Botones ============================= */
+
+.boton-primario, .boton-secundario, .boton-terciario, .boton-sesion{
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-primario{
+    background: var(--primario);
+    color: var(--primario-w3);
+}
+
+.boton-primario:hover{
+    background-color: var(--primario-b1);
+    box-shadow: 0px 3px 5px var(--primario-w2);
+    transition: .3s;
+}
+
+.boton-secundario{
+    background: none;
+    box-shadow: inset 0px 0px 0px 2px var(--primario);
+    color: var(--primario);
+}
+
+.boton-secundario:hover{
+    background-color: var(--primario);
+    color: var(--primario-w3);
+    box-shadow: 0px 3px 5px var(--primario-w2);
+    transition: .3s;
+}
+
+.boton-sesion{
+    background: none;
+    box-shadow: inset 0px 0px 0px 2px var(--secundario-w3);
+    color: var(--secundario-w3);
+    text-decoration: none;
+}
+
+.boton-sesion:hover{
+    background-color: var(--secundario-w3);
+    color: var(--secundario);
+    box-shadow: 0px 0px 5px var(--secundario-w3);
+    transition: .3s;
+}
+
+.boton-terciario{
+    color: var(--secundario);
+    text-decoration: none;
+}
+
+.boton-terciario:hover{
+    text-decoration: underline;
+    color: var(--secundario-w1);
+    transition: .3s;
+}
+
+.boton-primario:active, .boton-secundario:active, .boton-terciario:active, .boton-sesion:active{
+    transform: scale(.9);
+    transform-origin: center center;
+    transition: .1s ;
+}
+
+/* ========================== Fin Botones ============================= */
+
+/* ========================== Login =====================*/
+
+.contenedor {
+    background: #ededed;
+    border-radius: 10px;
+    height: 650px;
+    margin: 1% auto;
+    overflow: hidden;
+    width: 1000px;
+}
+
+.login {
+    background: var(--primario-w3);
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    top: -100%;
+    z-index: 1;
+}
+
+.login > img, .register > img{
+    width: 50%;
+    height: 40%;
+}
+
+.register {
+    background: var(--primario-w3);
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    top: -100%;
+    z-index: 1;
+}
+
+.cover {
+    background: var(--secundario-b1);
+    color: #fff;
+    height: 100%;
+    margin: 0 0 0 50%;
+    position: relative;
+    text-align: center;
+    transition: margin 0.7s, background 0.5s, display 1s, width 1s;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+.cover p {
+    width: 80%;
+}
+
+.cover:target {
+    background: var(--secundario);
+    margin: 0;
+}
+
+.cover:target .sign-up, .sign-in {
+    display: none;
+}
+
+.cover:target .sign-in {
+    display: inline-block;
+}
+
+.login-form{
+    padding: 0px 70px;
+}
+
+.login-form input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 2px solid rgba(83, 53, 204, 0.50);
+    background: rgba(203, 194, 240, 0.30);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.login-form input::placeholder, input[type=date i]{
+    font-family: var(--nunito-extra-thin);
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type=date]{
+    display: flex;
+    padding: 5px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px;
+    background-color: var(--primario);
+}
+
+.input-nick input{
+    padding: 10px 35px;
+}
+
+.input-nick span::before{
+    top: 6px;
+    padding: 8px;
+    border-radius: 30px 0px 0px 30px;
+    background-color: var(--primario);
+    font-family: var(--nunito-thin);
+    color: var(--primario-w3);
+    position: absolute;
+    content: '@';
+}
+
+.login-form input:focus{
+    border: 2px solid var(--primario-b1);
+    outline: none;
+}
+
+.register .login-form{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 0px 10px;
+}
+
+.register .texto-boton, .register .inp-mail, .register button[type=submit]{
+    grid-column: span 2;
+}
+
+.input-register, .input-nick{
+    position: relative;
+}
+
+.input-register span::after{
+    right: 10px;
+    margin: 12px 0px;
+    position: absolute;
+    content: url(static/icons/required.svg);
+}
+
+.login-form .boton-primario{
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.social-login{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--primario-w2);
+}
+
+.rq::after{
+    content: url(static/icons/required.svg);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.warnings{
+    font-size: 14px;
+    font-family: var(--nunito-thin);
+    color: red;
+    margin-top: 10px;
+}
+
+/* ========================== Fin Login =====================*/
+
+/* ========================== Loader ============================= */
+
+.loading-page {
+    position: absolute;
+    background-color: hsla(270, 65%,5%, .8);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: disolve 5s forwards;
+    top: 0;
+    z-index: 100;
+}
+  
+.loading-page svg {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    stroke-width: 3px;
+    stroke-dasharray: 1000;
+    animation: draw 5s ease;
+}
+  
+.name-container {
+    overflow: hidden;
+}
+    
+.logo-name {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    animation: elevacion 3s;
+    color: var(--primario-w3);
+}
+
+/* ========================== Fin Loader ============================= */
+
+/* ========================== Animaciones ============================= */
+
+@keyframes draw {
+    0% {
+        fill-opacity: 0;
+        stroke-dashoffset: 1000;
+    }
+    50%{
+        fill-opacity: 1;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+  
+@keyframes disolve{
+    0%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+  
+@keyframes elevacion{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ========================== Fin Animaciones ============================= */
+
+@media only screen and (mim-width: 1200px) {
+    
+}
