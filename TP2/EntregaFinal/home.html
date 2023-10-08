@@ -35,26 +35,226 @@
             <p class="parrafo logo-name">maxijuegos</p>
         </div>
     </div>
-    <header></header>
-    <main>
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
+    <header class="header">
+        <button class="boton-toggle"><img src="static/icons/toogle.svg" alt=""></button>
+        <div class="inp-busqueda">
+            <input type="text" placeholder="Buscar Juegos">
+            <a class="boton-toggle" href="#"><img src="static/icons/search.svg" alt=""></a>
+        </div>
+        <a class="boton-logo" href="home.html">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3667 14.05L17.1083 16.3667H14.3583L12.5 17.4334L10.6417 16.3667H7.79167L6.63333 14.05L0 10.2167L4.79167 22.0667H20.2083L25 10.2167L18.3667 14.05Z" fill="url(#paint0_radial_194_2257)"/>
+                <path d="M18.3667 14.05L12.5001 17.4333L6.63341 14.05L4.79175 22.0667H20.2084L18.3667 14.05Z" fill="#DF6400"/>
+                <path d="M12.5001 3L20.2084 22.0667H4.79175L12.5001 3Z" fill="url(#paint1_linear_194_2257)"/>
+                <defs>
+                <radialGradient id="paint0_radial_194_2257" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.5 16.142) scale(14.4246)">
+                <stop offset="0.0264561" stop-color="#F9CA00"/>
+                <stop offset="0.2736" stop-color="#F7BF00"/>
+                <stop offset="0.7039" stop-color="#F3A300"/>
+                <stop offset="1" stop-color="#EF8B00"/>
+                </radialGradient>
+                <linearGradient id="paint1_linear_194_2257" x1="12.5002" y1="22.0647" x2="12.5002" y2="3.00191" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F2A000"/>
+                <stop offset="0.2043" stop-color="#F4A900"/>
+                <stop offset="0.9735" stop-color="#F9CA00"/>
+                </linearGradient>
+                </defs>
+            </svg>                
+        </a>
+        <a class="boton-toggle btn-query">
+            <img src="static/icons/heart.svg" alt="">
+            <p>Mis Juegos</p>
+        </a>
+        <button class="boton-toggle"><img src="static/icons/cart.svg" alt=""></button>
+    </header>
+    <!--
+    <nav class="nav">
+        <ul class="categorias">
+            <li>
+                <a class="avatar" href="#">
+                    <img src="static/icons/avatar.svg" alt="">
+                    <span class="av-name">Fulano detal</span>
+                    <span class="av-mail">fulanito@gmail.com</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/cerrar sesion.svg" alt="">
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#">
+                    <img src="static/icons/clicker.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/car.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/controller.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/castle.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/football.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/shooting.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/gun.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/flash.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/soccer.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/pacman.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/motorbike.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/bike.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    -->
+    <main class="main">
+        <section class="slider-wrapper">
+            <div class="slider">
+                <article id="slide-1">
+                    <img src="https://cdn2.unrealengine.com/egs-ac-mirage-carousel-desktop-1920x1080-9380e8fef189.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+                <article id="slide-2">
+                    <img src="https://cdn2.unrealengine.com/fc24se-epic-merch-feature-carousel-desktop-1248x702-1248x702-51e411bd25db.png?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+                <article id="slide-3">
+                    <img src="https://cdn2.unrealengine.com/egs-witchfire-carousel-desktop-1248x702-2f0288fe9674.png?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+                <article id="slide-4">
+                    <img src="https://cdn2.unrealengine.com/egs-cp2077-phantom-liberty-carousel-desktop-1920x1080-96274ead1804.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+                <article id="slide-5">
+                    <img src="https://cdn2.unrealengine.com/egs-lords-of-the-fallen-carousel-desktop-1920x1080-8edcd525f1fc.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+                <article id="slide-6">
+                    <img src="https://cdn2.unrealengine.com/egs-horizon-forbidden-west-carousel-desktop-1920x1080-358478b6468a.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
+    
+                </article>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+            </div>
+        </section>
+        <h3 class="titulo-terciario">Juegos destacados</h3>
+        <section class="wrapper">
+            <button id="left"> < </button>
             <div class="carousel">
-                <img src="images/img-1.jpg" alt="img" draggable="false">
-                <img src="images/img-2.jpg" alt="img" draggable="false">
-                <img src="images/img-3.jpg" alt="img" draggable="false">
-                <img src="images/img-4.jpg" alt="img" draggable="false">
-                <img src="images/img-5.jpg" alt="img" draggable="false">
-                <img src="images/img-6.jpg" alt="img" draggable="false">
-                <img src="images/img-7.jpg" alt="img" draggable="false">
-                <img src="images/img-8.jpg" alt="img" draggable="false">
-                <img src="images/img-9.jpg" alt="img" draggable="false">
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/evowarsio/cover-1586449813403.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/bloxdhop-io/cover-1671463581901.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/fish-eat-getting-big/20230619111811/fish-eat-getting-big-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/smash-karts/cover-1690365923966.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/crazy-roll-3d/coverundefined-1693299832914.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/color-tap-coloring-by-numbers_16x9/20231003040240/color-tap-coloring-by-numbers_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/laqueus-escape-2---chapter-i_16x9/20230928072151/laqueus-escape-2---chapter-i_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/dino-world-merge-fight_16x9/20230929094550/dino-world-merge-fight_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/raft-life/20230804113102/raft-life-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
             </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+            <button id="right"> > </button>
+        </section>
+        <p class="parrafo-resaltado">Juegos de cartas <a class="boton-terciario" href="#">Ver mas</a></p>
+        <section class="wrapper">
+            <button id="left"> < </button>
+            <div class="carousel">
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/uno-online/cover-1679068977831.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&w=242&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/solitaire-social/thumb-1585078055716.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/foono-online-multiplayer-card-game_16x9/20231002101605/foono-online-multiplayer-card-game_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/spooky-tripeaks/20221010121338/spooky-tripeaks-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/duo-with-friends/20211116161001/duo-with-friends-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/solitrcom.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/solitaire-story-tripeaks-4/cover-1686600269586.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/spider-solitaire-time/cover-1643213064991.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/microsoft-solitaire-collection/cover-1598974383073.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
             </div>
+            <button id="right"> > </button>
+        </section>
     </main>
-    <nav></nav>
+    
      
     <footer></footer>
+    <script src="static/js/home.js"></script>
 </body>
 </html>

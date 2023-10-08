@@ -1,45 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
 @font-face {
     font-family: "Nunito";
     src: url("static/tipografia/nunito_regular.woff");
 }
+
 @font-face {
     font-family: "Nunito bold";
     src: url("static/tipografia/nunito_bold.woff");
 }
+
 @font-face {
     font-family: "Nunito thin";
     src: url("static/tipografia/nunito_thin.woff");
 }
+
 @font-face {
     font-family: "Nunito extra thin";
     src: url("static/tipografia/nunito_extra_thin.woff2");
 }
 
-:root{
-    --primario-w3: hsl(250,60%,95%);
-    --primario-w2: hsl(250,60%,85%);
-    --primario-w1: hsl(250,60%,70%);
-    --primario: hsl(250,60%,50%);
-    --primario-b1: hsl(250,60%,30%);
-    --primario-b2: hsl(250,60%,15%);
-    --primario-b3: hsl(250,60%,5%);
+:root {
+    --primario-w3: hsl(250, 60%, 95%);
+    --primario-w2: hsl(250, 60%, 85%);
+    --primario-w1: hsl(250, 60%, 70%);
+    --primario: hsl(250, 60%, 50%);
+    --primario-b1: hsl(250, 60%, 30%);
+    --primario-b2: hsl(250, 60%, 15%);
+    --primario-b3: hsl(250, 60%, 5%);
 
-    --secundario-w3: hsl(270, 65%,95%);
-    --secundario-w2: hsl(270, 65%,85%);
-    --secundario-w1: hsl(270, 65%,70%);
-    --secundario: hsl(270, 65%,50%);
-    --secundario-b1: hsl(270, 65%,30%);
-    --secundario-b2: hsl(270, 65%,15%);
-    --secundario-b3: hsl(270, 65%,5%);
+    --secundario-w3: hsl(270, 65%, 95%);
+    --secundario-w2: hsl(270, 65%, 85%);
+    --secundario-w1: hsl(270, 65%, 70%);
+    --secundario: hsl(270, 65%, 50%);
+    --secundario-b1: hsl(270, 65%, 30%);
+    --secundario-b2: hsl(270, 65%, 15%);
+    --secundario-b3: hsl(270, 65%, 5%);
 
-    --acento-w3: hsl(40,100%,95%);
-    --acento-w2: hsl(40,100%,85%);
-    --acento-w1: hsl(40,100%,70%);
-    --acento: hsl(40,100%,50%);
-    --acento-b1: hsl(40,100%,30%);
-    --acento-b2: hsl(40,100%,15%);
-    --acento-b3: hsl(40,100%,5%);
+    --acento-w3: hsl(40, 100%, 95%);
+    --acento-w2: hsl(40, 100%, 85%);
+    --acento-w1: hsl(40, 100%, 70%);
+    --acento: hsl(40, 100%, 50%);
+    --acento-b1: hsl(40, 100%, 30%);
+    --acento-b2: hsl(40, 100%, 15%);
+    --acento-b3: hsl(40, 100%, 5%);
 
     --nunito: 'Nunito', sans-serif;
     --nunito-thin: 'Nunito thin', sans-serif;
@@ -53,49 +57,66 @@
     --p2-size: 0.938rem;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.titulo-principal, .titulo-secundario, .titulo-terciario, .parrafo-resaltado{
+.titulo-principal,
+.titulo-secundario,
+.titulo-terciario,
+.parrafo-resaltado {
     font-family: var(--nunito-bold);
 }
 
-.titulo-principal{
+.titulo-principal {
     font-size: 56px;
 }
-.titulo-secundario{
+
+.titulo-secundario {
     font-size: 40px;
 }
-.titulo-terciario{
+
+.titulo-terciario {
     font-size: 30px;
 }
-.parrafo-resaltado{
+
+.parrafo-resaltado {
     font-size: 22px;
 }
-.parrafo{
+
+.parrafo {
     font-family: var(--nunito);
     font-size: 22px;
 }
-.texto-boton, .boton-primario, .boton-secundario, .boton-terciario, .boton-sesion{
+
+.texto-boton,
+.boton-primario,
+.boton-secundario,
+.boton-terciario,
+.boton-sesion {
     font-family: var(--nunito-thin);
     font-size: 18px;
 }
-.detalle{
+
+.detalle {
     font-family: var(--nunito-extra-thin);
     font-size: 16px;
 }
 
-body{
+body {
     background-color: var(--primario-b2);
+    display: flex;
 }
 
 
 /* ========================== Botones ============================= */
 
-.boton-primario, .boton-secundario, .boton-terciario, .boton-sesion{
+.boton-primario,
+.boton-secundario,
+.boton-terciario,
+.boton-sesion {
     display: inline-flex;
     justify-content: center;
     gap: 10px;
@@ -106,59 +127,108 @@ body{
     cursor: pointer;
 }
 
-.boton-primario{
+.boton-primario {
     background: var(--primario);
     color: var(--primario-w3);
 }
 
-.boton-primario:hover{
+.boton-primario:hover {
     background-color: var(--primario-b1);
     box-shadow: 0px 3px 5px var(--primario-w2);
     transition: .3s;
 }
 
-.boton-secundario{
+.boton-secundario {
     background: none;
     box-shadow: inset 0px 0px 0px 2px var(--primario);
     color: var(--primario);
 }
 
-.boton-secundario:hover{
+.boton-secundario:hover {
     background-color: var(--primario);
     color: var(--primario-w3);
     box-shadow: 0px 3px 5px var(--primario-w2);
     transition: .3s;
 }
 
-.boton-sesion{
+.boton-sesion {
     background: none;
     box-shadow: inset 0px 0px 0px 2px var(--secundario-w3);
     color: var(--secundario-w3);
     text-decoration: none;
 }
 
-.boton-sesion:hover{
+.boton-sesion:hover {
     background-color: var(--secundario-w3);
     color: var(--secundario);
     box-shadow: 0px 0px 5px var(--secundario-w3);
     transition: .3s;
 }
 
-.boton-terciario{
+.boton-terciario {
     color: var(--secundario);
     text-decoration: none;
 }
 
-.boton-terciario:hover{
+.boton-terciario:hover {
     text-decoration: underline;
     color: var(--secundario-w1);
     transition: .3s;
 }
 
-.boton-primario:active, .boton-secundario:active, .boton-terciario:active, .boton-sesion:active{
+.boton-primario:active,
+.boton-secundario:active,
+.boton-terciario:active,
+.boton-sesion:active,
+.boton-toggle:active {
     transform: scale(.9);
     transform-origin: center center;
-    transition: .1s ;
+    transition: .1s;
+}
+
+.boton-toggle {
+    background: var(--primario-b2);
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-toggle img {
+    width: 25px;
+    height: 25px;
+}
+
+.boton-toggle:hover {
+    background-color: var(--primario-w3);
+    box-shadow: 0px 0px 10px 1px var(--primario-w3);
+    transition: .3s;
+}
+
+.boton-toggle:hover img {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+.boton-logo {
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.boton-logo svg {
+    width: 45px;
+    height: 45px;
+}
+
+.boton-logo:hover svg {
+    filter: drop-shadow(0px 0px 10px var(--acento));
+    transform: scale(1.2);
+    transition: transform .5s, filter .5s;
 }
 
 /* ========================== Fin Botones ============================= */
@@ -185,7 +255,8 @@ body{
     z-index: 1;
 }
 
-.login > img, .register > img{
+.login>img,
+.register>img {
     width: 50%;
     height: 40%;
 }
@@ -227,7 +298,8 @@ body{
     margin: 0;
 }
 
-.cover:target .sign-up, .sign-in {
+.cover:target .sign-up,
+.sign-in {
     display: none;
 }
 
@@ -235,11 +307,11 @@ body{
     display: inline-block;
 }
 
-.login-form{
+.login-form {
     padding: 0px 70px;
 }
 
-.login-form input{
+.login-form input {
     width: 100%;
     padding: 10px;
     margin: 5px 0px;
@@ -249,18 +321,19 @@ body{
     box-sizing: border-box;
 }
 
-.login-form input::placeholder, input[type=date i]{
+.login-form input::placeholder,
+input[type=date i] {
     font-family: var(--nunito-extra-thin);
     font-size: 16px;
     text-align: center;
 }
 
-input[type=date]{
+input[type=date] {
     display: flex;
     padding: 5px;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator{
+input[type=date]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     position: absolute;
     left: 0;
@@ -269,11 +342,11 @@ input[type=date]::-webkit-calendar-picker-indicator{
     background-color: var(--primario);
 }
 
-.input-nick input{
+.input-nick input {
     padding: 10px 35px;
 }
 
-.input-nick span::before{
+.input-nick span::before {
     top: 6px;
     padding: 8px;
     border-radius: 30px 0px 0px 30px;
@@ -284,12 +357,12 @@ input[type=date]::-webkit-calendar-picker-indicator{
     content: '@';
 }
 
-.login-form input:focus{
+.login-form input:focus {
     border: 2px solid var(--primario-b1);
     outline: none;
 }
 
-.register .login-form{
+.register .login-form {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,33 +370,36 @@ input[type=date]::-webkit-calendar-picker-indicator{
     gap: 0px 10px;
 }
 
-.register .texto-boton, .register .inp-mail, .register button[type=submit]{
+.register .texto-boton,
+.register .inp-mail,
+.register button[type=submit] {
     grid-column: span 2;
 }
 
-.input-register, .input-nick{
+.input-register,
+.input-nick {
     position: relative;
 }
 
-.input-register span::after{
+.input-register span::after {
     right: 10px;
     margin: 12px 0px;
     position: absolute;
     content: url(static/icons/required.svg);
 }
 
-.login-form .boton-primario{
+.login-form .boton-primario {
     width: 100%;
 }
 
-.redes{
+.redes {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 20px;
 }
 
-.social-login{
+.social-login {
     height: 40px;
     width: 40px;
     padding: 5px;
@@ -331,12 +407,13 @@ input[type=date]::-webkit-calendar-picker-indicator{
     border: 1px solid var(--primario-w2);
 }
 
-.rq::after{
+.rq::after {
     content: url(static/icons/required.svg);
     vertical-align: middle;
     margin-left: 10px;
 }
-.warnings{
+
+.warnings {
     font-size: 14px;
     font-family: var(--nunito-thin);
     color: red;
@@ -345,11 +422,240 @@ input[type=date]::-webkit-calendar-picker-indicator{
 
 /* ========================== Fin Login =====================*/
 
+/* ========================== Header =====================*/
+.header {
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-content: center;
+    justify-items: center;
+    position: fixed;
+    background-color: rgba(14, 4, 21, .8);
+    z-index: 100;
+}
+
+.inp-busqueda {
+    margin: auto;
+    display: flex;
+}
+
+.inp-busqueda input {
+    font-family: var(--nunito-thin);
+    color: var(--secundario-w3);
+    background: var(--secundario-b1);
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.inp-busqueda input::placeholder {
+    color: var(--secundario-w3);
+}
+
+.boton-toggle p{
+    display: none;
+}
+
+/* ========================== Fin Header =====================*/
+
+/* ========================== Nav =====================*/
+.nav{
+    display: flex;
+    height: 100vh;
+    width: 60px;
+    margin-top: 60px;
+    background-color: white;
+    position: fixed;
+    background-color: var(--primario-b2);
+    border-right: 1px solid var(--primario-b1);
+    overflow: hidden;
+}
+.nav:hover{
+    width: 200px;
+}
+.categorias{
+    width: 200px;
+}
+.categorias li{
+    width: 100%;
+}
+
+.categorias li a{
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+
+.categorias a img{
+    padding: 0px 20px;
+    width: 60px;
+    height: 34px;
+}
+
+.categorias{
+    width: 100%;
+}
+
+/* ========================== Fin Nav =====================*/
+
+/* ========================== Main =====================*/
+
+.main{
+    margin: 100px 0px 0px 20px;
+}
+
+.main .titulo-terciario, .main .parrafo-resaltado{
+    margin: 10px 0px;
+    color: var(--primario-w3);
+}
+
+/* ========================== Fin Main =====================*/
+
+/* ========================== Sliders ====================== */
+
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin-right: 20px;
+    z-index: 0;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 20/9;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: .5rem;
+}
+
+.slider article{
+    flex: 1 0 100%;
+
+}
+
+.slider article img{
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--acento);
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+
+
+
+/* ========================== Fin Sliders ====================== */
+
+/* ========================== Carrusel =====================*/
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper button{
+    height: 100%;
+    width: 50px;
+    color: var(--primario-w3);
+    background-color: rgba(8, 5, 20, .8);
+    cursor: pointer;
+    font-family: var(--nunito);
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    border: none;
+}   
+
+.wrapper button:hover{
+    background: rgba(8, 5, 20, 1);
+    text-shadow: 0px 0px 10px 10px var(--primario-w3);
+    transition: .5s;
+}
+.wrapper button:first-child{
+    left: 0px;
+    display: none;
+}
+.wrapper button:last-child{
+    right: 0px;
+}
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 120px;
+    object-fit: cover;
+    user-select: none;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px var(--secundario-b3);
+}
+.carousel a{
+    margin-right: 14px;
+}
+.carousel li{
+    display: inline;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+@media only screen and (min-width: 768px) {
+    .carousel img{
+        width: calc(80% / 3);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .carousel img{
+        width: calc(100% / 6);
+    }   
+}
+  
+
+/* ========================== Fin Carrusel =====================*/
+
 /* ========================== Loader ============================= */
 
 .loading-page {
     position: absolute;
-    background-color: hsla(270, 65%,5%, .8);
+    background-color: hsla(270, 65%, 5%, .8);
     backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
@@ -361,7 +667,7 @@ input[type=date]::-webkit-calendar-picker-indicator{
     top: 0;
     z-index: 100;
 }
-  
+
 .loading-page svg {
     height: 150px;
     width: 150px;
@@ -370,11 +676,11 @@ input[type=date]::-webkit-calendar-picker-indicator{
     stroke-dasharray: 1000;
     animation: draw 5s ease;
 }
-  
+
 .name-container {
     overflow: hidden;
 }
-    
+
 .logo-name {
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -391,33 +697,38 @@ input[type=date]::-webkit-calendar-picker-indicator{
         fill-opacity: 0;
         stroke-dashoffset: 1000;
     }
-    50%{
+
+    50% {
         fill-opacity: 1;
     }
+
     100% {
         stroke-dashoffset: 0;
     }
 }
-  
-@keyframes disolve{
-    0%{
+
+@keyframes disolve {
+    0% {
         opacity: 1;
     }
-    70%{
+
+    70% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
 }
-  
-@keyframes elevacion{
-    0%{
+
+@keyframes elevacion {
+    0% {
         transform: translateY(50px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
@@ -425,6 +736,43 @@ input[type=date]::-webkit-calendar-picker-indicator{
 
 /* ========================== Fin Animaciones ============================= */
 
-@media only screen and (mim-width: 1200px) {
-    
+@media only screen and (min-width: 768px) {
+    .header{
+        grid-template-columns: .5fr 1fr 10fr 2fr 1fr;
+        bottom: auto;
+        top: 0;
+    }
+    .inp-busqueda{
+        position: relative;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .inp-busqueda input{
+        display: initial;
+        width: 45%;
+
+    }
+    .inp-busqueda a {
+        position: absolute;
+        right: 30%;
+        top: 8px;
+    }
+    .btn-query{
+        display: flex;
+        align-items: center;
+        width: 140px;
+        gap: 5px;
+        font-family: var(--nunito-thin);
+        color: var(--secundario-w3);
+    }
+    .btn-query p{
+        display: initial;
+    }
+    .btn-query:hover{
+        color: var(--secundario-b3);
+        transition: .5s;
+    }
 }
