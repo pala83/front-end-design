@@ -108,6 +108,7 @@
 body {
     background-color: var(--primario-b2);
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -501,7 +502,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border: 1px solid var(--primario-b1);
 }
 
-.categorias li a{
+.categorias li a, .categorias li span{
     display: flex;
     width: 200px;
     height: 100%;
@@ -522,11 +523,62 @@ input[type=date]::-webkit-calendar-picker-indicator {
 */
 }
 
+.categorias span img{
+    padding: 0px 15px;
+    width: 60px;
+    height: 34px;
+}
+
 .categorias{
     width: 100%;
+    margin-top: 20px ;
+}
+
+.categorias li a:hover span{
+    color: var(--primario-b2);
+    transition: .5s;
+}
+
+.categorias li .avatar:hover span{
+    color: var(--primario-b2);
+    transition: .5s;
+}
+
+.categorias li a:hover img{
+    filter: invert(100%);
+    transition: .5s;
+}
+
+.categorias li .avatar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 60px auto;
+    padding: 10px 0px;
+}
+
+.avatar img{
+    height: 56px;
+    grid-row: span 2;
+}
+
+.avatar .av-name{
+    width: 140px;
+    font-family: var(--nunito);
+}
+.avatar .av-mail{
+    width: 140px;
+    font-family: var(--nunito-extra-thin);
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ========================== Fin Nav =====================*/
+
+/* ========================== Carrito =====================*/
+
+
+/* ========================== Fin Carrito =====================*/
 
 /* ========================== Main =====================*/
 
@@ -543,6 +595,12 @@ main.nav-abierto{
 
 .main .titulo-principal{
     margin-bottom: 30px;
+}
+
+.main .continuado{
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
 }
 
 .main .titulo-terciario, .main .parrafo-resaltado{
@@ -649,6 +707,36 @@ main.nav-abierto{
 
 /* ========================== Fin Sliders ====================== */
 
+/* ========================== Footer ====================== */
+.footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto auto auto;
+    background-color: var(--primario-b3);
+    margin-top: 50px;
+    padding: 40px 0px;
+}
+
+.f-categoria .parrafo-resaltado{
+    color: var(--primario-w3);
+}
+
+.footer .f-logo{
+    padding: 0px 100px;
+    width: 100%;
+}
+
+.footer .f-categoria{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .f-categoria .boton-terciario{
+    justify-content: initial;
+    padding: 0;
+}
+/* ========================== Fin Footer ====================== */
+
 /* ========================== Carrusel =====================*/
 
 .wrapper{
@@ -728,16 +816,17 @@ main.nav-abierto{
 /* ========================== Loader ============================= */
 
 .loading-page {
-    position: absolute;
+    position: fixed;
     background-color: hsla(270, 65%, 5%, .8);
     backdrop-filter: blur(10px);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     animation: disolve 5s forwards;
+    bottom: 0;
     top: 0;
     z-index: 100;
 }
