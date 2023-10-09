@@ -1,5 +1,8 @@
 const search = document.querySelector(".inp-busqueda .boton-toggle"),
-wrappers = document.querySelectorAll(".wrapper");
+wrappers = document.querySelectorAll(".wrapper"),
+nav = document.querySelector(".nav"),
+toggle = document.querySelector("#toggle"),
+main = document.querySelector(".main");
 
 window.addEventListener("resize", ()=>{claseMediaQUery(search,'boton-toggle')})
 window.addEventListener("load", claseMediaQUery(search, 'boton-toggle'))
@@ -67,4 +70,10 @@ wrappers.forEach(wrapper=>{
 
     document.addEventListener("mouseup", dragStop);
     document.addEventListener("mousemove", dragging);
+});
+
+toggle.addEventListener("click",()=>{
+    nav.classList.toggle("nav-oculto");
+    main.classList.toggle("nav-abierto")
+
 })

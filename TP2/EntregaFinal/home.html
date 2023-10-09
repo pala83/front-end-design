@@ -11,6 +11,7 @@
     <title>Home</title>
 </head>
 <body>
+    <!--
     <div class="loading-page">
         <svg width="300" height="229" viewBox="0 0 300 229" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M220.4 132.6L205.3 160.4H172.3L150 173.2L127.7 160.4H93.5L79.6 132.6L0 86.6L57.5 228.8H242.5L300 86.6L220.4 132.6Z" fill="url(#paint0_radial_171_1533)"/>
@@ -35,8 +36,9 @@
             <p class="parrafo logo-name">maxijuegos</p>
         </div>
     </div>
+    -->
     <header class="header">
-        <button class="boton-toggle"><img src="static/icons/toogle.svg" alt=""></button>
+        <button id="toggle" class="boton-toggle"><img src="static/icons/toogle.svg" alt=""></button>
         <div class="inp-busqueda">
             <input type="text" placeholder="Buscar Juegos">
             <a class="boton-toggle" href="#"><img src="static/icons/search.svg" alt=""></a>
@@ -67,8 +69,7 @@
         </a>
         <button class="boton-toggle"><img src="static/icons/cart.svg" alt=""></button>
     </header>
-    <!--
-    <nav class="nav">
+    <nav class="nav nav-oculto">
         <ul class="categorias">
             <li>
                 <a class="avatar" href="#">
@@ -80,6 +81,7 @@
             <li>
                 <a href="#">
                     <img src="static/icons/cerrar sesion.svg" alt="">
+                    <span>Cerrar Sesión</span>
                 </a>
             </li>
             <hr>
@@ -145,33 +147,74 @@
             </li>
         </ul>
     </nav>
-    -->
     <main class="main">
+        <h1 class="titulo-principal">Descuentos del mes de septiembre</h1>
         <section class="slider-wrapper">
             <div class="slider">
                 <article id="slide-1">
-                    <img src="https://cdn2.unrealengine.com/egs-ac-mirage-carousel-desktop-1920x1080-9380e8fef189.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <img src="static/assets/apple-vs-android.png" alt="">
+                    <div class="informacion">
+                        <img src="static/assets/apple-vs-android-vs-windows.png" alt="">
+                        <h2 class="titulo-secundario">ANDROID VS APPLE</h2>
+                        <p>DISPONIBLE AHORA</p>
+                        <p>La pelea mas épica de todos los tiempos, los dos sistemas operativos mas famosos para dispositivos móviles se enfrentan en un juego que nada tiene que ver.</p>
+                        <a href="4-en-linea.html" target="_blank" class="boton-primario">Jugar Ahora</a>                        
+                    </div>
                 </article>
                 <article id="slide-2">
                     <img src="https://cdn2.unrealengine.com/fc24se-epic-merch-feature-carousel-desktop-1248x702-1248x702-51e411bd25db.png?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <div class="informacion">
+                        <img src="https://cdn2.unrealengine.com/fc24se-epic-merch-feature-carousel-logo-350x83-350x83-21ae298df333.png" alt="">
+                        <p>DISPONIBLE AHORA</p>
+                        <p>Utiliza armas extrañas y magia prohibida para dar caza a una bruja que esconde la clave de tu salvación.</p>
+                        <p>A partir de <span>14,49 US$</span> </p>
+                        <button class="boton-primario">Comprar Ahora</button>
+                        <button class="boton-terciario">Agregar al carrito</button>
+                    </div>
                 </article>
                 <article id="slide-3">
                     <img src="https://cdn2.unrealengine.com/egs-witchfire-carousel-desktop-1248x702-2f0288fe9674.png?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <div class="informacion">
+                        <img src="https://cdn2.unrealengine.com/egs-witchfire-carousel-logo-350x173-617c15475024.png" alt="">
+                        <p>DISPONIBLE AHORA</p>
+                        <p>Vuelve a encarnar a V, merc a sueldo con cibermejoras, en una mision cargada de espionaje e intriga para salvar a la presidenta de los NN. EE. UU.</p>
+                        <p>A partir de <span>24,99 US$</span> </p>
+                        <button class="boton-primario">Comprar Ahora</button>
+                        <button class="boton-terciario">Agregar al carrito</button>
+                    </div>
                 </article>
                 <article id="slide-4">
                     <img src="https://cdn2.unrealengine.com/egs-cp2077-phantom-liberty-carousel-desktop-1920x1080-96274ead1804.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <div class="informacion">
+                        <img src="https://cdn2.unrealengine.com/egs-cp2077-phantom-liberty-carousel-logo-350x126-f5785ff4c215.png" alt="">
+                        <p>DISPONIBLE EL 13 DE OCTUBRE</p>
+                        <p>Como uno de los famosos Cruzados Negros, emprende una épica misión para derrocar al dios maligno Aldyr.</p>
+                        <p>A partir de <span>39,99 US$</span> </p>
+                        <button class="boton-primario">Comprar Ahora</button>
+                        <button class="boton-terciario">Agregar al carrito</button>
+                    </div>
                 </article>
                 <article id="slide-5">
                     <img src="https://cdn2.unrealengine.com/egs-lords-of-the-fallen-carousel-desktop-1920x1080-8edcd525f1fc.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <div class="informacion">
+                        <img src="https://cdn2.unrealengine.com/egs-lords-of-the-fallen-carousel-logo-350x43-4587fc175b9a.png" alt="">
+                        <p>PROXIMAMENTE</p>
+                        <p>El épico Horizon Forbidden West completo, con todos sus contenidos adicionales y la expansión Burning Shores.</p>
+                        <p>A partir de <span>69,99 US$</span> </p>
+                        <button class="boton-primario">Comprar Ahora</button>
+                        <button class="boton-terciario">Agregar al carrito</button>
+                    </div>
                 </article>
                 <article id="slide-6">
                     <img src="https://cdn2.unrealengine.com/egs-horizon-forbidden-west-carousel-desktop-1920x1080-358478b6468a.jpg?h=720&quality=medium&resize=1&w=1280" alt="">
-    
+                    <div class="informacion">
+                        <img src="https://cdn2.unrealengine.com/egs-horizon-forbidden-west-carousel-logo-350x137-4761b0e32379.png" alt="">
+                        <p>DISPONIBLE AHORA</p>
+                        <p>EA SPORTS FC 24 te da la bienvenida a The Word's Game: la experiencia futbolistica mas fiel hasta la fecha</p>
+                        <p>A partir de <span>69,99 US$</span> </p>
+                        <button class="boton-primario">Comprar Ahora</button>
+                        <button class="boton-terciario">Agregar al carrito</button>
+                    </div>
                 </article>
             </div>
             <div class="slider-nav">
@@ -247,6 +290,74 @@
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/microsoft-solitaire-collection/cover-1598974383073.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+            </div>
+            <button id="right"> > </button>
+        </section>
+        <p class="parrafo-resaltado">Juegos de .io <a class="boton-terciario" href="#">Ver mas</a></p>
+        <section class="wrapper">
+            <button id="left"> < </button>
+            <div class="carousel">
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/ev-io/cover-1676998283524.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/thelast-io/20210322181359/thelast-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/agario/20230719092731/agario-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/sploop-io/20210713142850/sploop-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/duckpark-io/cover-1585853392521.jpg?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/stabfish-io/20230102073830/stabfish-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/king-io-world-war/20230629050348/king-io-world-war-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/tyran-io/20220209162110/tyran-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/brutalmania-io/cover-1584553430060.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+            </div>
+            <button id="right"> > </button>
+        </section>
+        <p class="parrafo-resaltado">Juegos multijugador <a class="boton-terciario" href="#">Ver mas</a></p>
+        <section class="wrapper">
+            <button id="left"> < </button>
+            <div class="carousel">
+                <a href="#">
+                    <img src="https://images.crazygames.com/house-of-hazards/20200910082214/house-of-hazards-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/soccer-legends-2021/cover-1619606990485.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/puppet-fighter-2-player/20221123094627/puppet-fighter-2-player-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/tennis-masters/20201207104629/tennis-masters-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/wrestle-bros/20230707191522/wrestle-bros-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/pill-soccer/20230424174048/pill-soccer-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/drunken-boxers/20230131112009/drunken-boxers-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                </a>
+                <a href="#">
+                    <img src="https://images.crazygames.com/gobattles-2--light-version-/20230414053754/gobattles-2--light-version--cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
                 </a>
             </div>
             <button id="right"> > </button>

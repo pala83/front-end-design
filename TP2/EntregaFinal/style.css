@@ -469,33 +469,57 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: flex;
     height: 100vh;
     width: 60px;
-    margin-top: 60px;
     background-color: white;
     position: fixed;
     background-color: var(--primario-b2);
     border-right: 1px solid var(--primario-b1);
     overflow: hidden;
+    z-index: 50;
+    transition: transform .5s;
+}
+.nav-oculto{
+    transform: translateX(-100%);
+    transition: .5s;
 }
 .nav:hover{
     width: 200px;
+    transition: .2s ease-out;
 }
-.categorias{
-    width: 200px;
-}
+
 .categorias li{
     width: 100%;
+}
+
+.categorias li:hover{
+    background-color: var(--primario-w3);
+    transition: .5s;
+}
+
+.categorias hr{
+    width: 75%;
+    margin: 10px auto;
+    border: 1px solid var(--primario-b1);
 }
 
 .categorias li a{
     display: flex;
     width: 200px;
     height: 100%;
+    font-family: var(--nunito-thin);
+    color: var(--primario-w3);
+    text-decoration: none;
+    align-items: center;
 }
 
 .categorias a img{
     padding: 0px 20px;
     width: 60px;
     height: 34px;
+    /*    
+    padding: 0px 20px;
+    width: 60px;
+    height: 34px;
+*/
 }
 
 .categorias{
@@ -507,12 +531,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* ========================== Main =====================*/
 
 .main{
-    margin: 100px 0px 0px 20px;
+    margin: 0px 0px 0px 20px;
+    color: var(--primario-w3);
+    transition: padding-left .5s;
+}
+
+main.nav-abierto{
+    padding-left: 60px;
+    transition: .5s;
+}
+
+.main .titulo-principal{
+    margin-bottom: 30px;
 }
 
 .main .titulo-terciario, .main .parrafo-resaltado{
     margin: 10px 0px;
-    color: var(--primario-w3);
 }
 
 /* ========================== Fin Main =====================*/
@@ -523,7 +557,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: relative;
     max-width: 100%;
     margin-right: 20px;
-    z-index: 0;
+    margin-bottom: 40px;
 }
 
 .slider{
@@ -537,8 +571,50 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .slider article{
+    position: relative;
     flex: 1 0 100%;
+}
 
+.slider .informacion{
+    font-size: 10px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0,0,0,.2) 90%, rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    padding: 0px 0px 10px 20px;
+    width: 50%;
+    font-family: var(--nunito);
+}
+
+.slider .informacion img{
+    width: 30%;
+}
+
+.slider .informacion button,.slider .informacion a{
+    font-size: 1.2em;
+    width: 48%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.slider .informacion p{
+    font-size: 1em;
+    width: 100%;
+}
+
+.slider .informacion h2{
+    width: 100%;
+    font-size: 2em;
+}
+
+.informacion p span{
+    font-family: var(--nunito-bold);
+    font-size: 18px;
 }
 
 .slider article img{
@@ -551,10 +627,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(50%);
-    z-index: 1;
+    bottom: -30px;
+    left: 45%;
 }
 
 .slider-nav a{
@@ -774,5 +848,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
     .btn-query:hover{
         color: var(--secundario-b3);
         transition: .5s;
+    }
+    .main{
+        margin: 80px 0px 0px 20px;
+    }
+    .categorias{
+        margin-top: 60px;
+    }
+    .slider .informacion{
+        padding: 0px 0px 40px 40px;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .slider .informacion img{
+        width: 50%;
+    }
+
+    .slider .informacion p{
+        width: 80%;
     }
 }
