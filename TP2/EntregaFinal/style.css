@@ -1014,7 +1014,7 @@ main.nav-abierto{
 .juego{
     position: relative;
     background-color: var(--primario-b3);
-    border-radius: 20px;
+    border-radius: 10px;
     height: 550px;
     overflow: hidden;
     margin-right: 20px;
@@ -1057,6 +1057,52 @@ main.nav-abierto{
 
 
 /* ========================== Fin Juego =====================*/
+
+/* ========================== Data game =====================*/
+.contenedor-game{
+    background-color: var(--primario-b3);
+    margin: 20px 20px 0px 0px;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.data-game{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr .2fr;
+    justify-items: start;
+    align-items: start;
+}
+.data-game .boton-primario span{
+    background: url("static/icons/compartir.svg");
+    width: 25px;
+    height: 25px;
+}
+.data-game .metricas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.data-game .metricas .categoria, .data-game .descripcion{
+    font-family: var(--nunito-extra-thin);
+}
+.data-game .metricas .valor{
+    font-family: var(--nunito);
+}
+.data-game .metricas .valor span{
+    font-family: var(--nunito-bold);
+    font-size: 22px;
+}
+.data-game hr{
+    grid-column: span 2;
+    width: 100%;
+    border: 1px solid var(--secundario);
+}
+
+/* ========================== Fin Data game =====================*/
 
 /* ========================== Loader ============================= */
 
