@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="static/icons/Logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <title>4 en linea</title>
@@ -227,7 +228,122 @@
             <p class="descripcion">¡Pelea entre sistemas operativos!, ¿quien ganara?, ¿el manzano o el muñeco verde?, ¿mejor cámara, o mejor batería?, ¿el inaccesible, o el económico?, ¿el de unica marca, o el que tiene mas marcas que un paquete de fideos?, ¿el que es seguro, o el que seguro me lo roban?, ¿Linux abierto, o Linux cerrado?. Semejante batalla solo se podrá determinar en un enfrentamiento jugando 4 en linea.</p>
             <hr>
         </section>
-        <div class="contenedor-game comentarios"></div>
+        <div class="contenedor-game comentarios">
+            <form action="#">
+                <label for="comentario" class="titulo-secundario">Deja tu comentario
+                    <span class="estrellitas">
+                        <input type="radio" name="rate" id="rate-5">
+                        <label for="rate-5" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-4">
+                        <label for="rate-4" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-3">
+                        <label for="rate-3" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-2">
+                        <label for="rate-2" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-1">
+                        <label for="rate-1" class="fa fa-star"></label>
+                    </span>
+                </label>
+                <textarea class="box-comentario" placeholder="Comentario..." name="comentario" id=""></textarea>
+                <button type="submit" class="boton-primario"><span></span>Comentar</button>
+            </form>
+            <h2 class="titulo-secundario">Últimos comentario</h2>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" alt="">
+                    <p>Karen</p>
+                    <p class="likes">
+                        500
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Un juego muy bonito</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="">
+                    <p>Muriel</p>
+                    <p class="likes">
+                        12022
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">En mi vida jugué semejante juego</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://randomuser.me/api/portraits/men/29.jpg" alt="">
+                    <p>Raúl</p>
+                    <p class="likes">
+                        92773
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">¿Se supone que el juego tenga la opción de "quiero vale 4" cuando se juntan 4 fichas en linea? o es un bug?</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://study.com/cimages/multimages/16/depictionanaxagoras.png" alt="">
+                    <p>Anaxagoras</p>
+                    <p class="likes">
+                        45
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Si me engañas una vez, tuya es la culpa; si me engañas dos, es mía; si alguien me gana en este juego, lo desinstalo.</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://i0.wp.com/wikisabio.com/wp-content/uploads/2017/06/550477db-8d2c-4ed2-9742-aa046d464419.jpg?fit=242%2C300&ssl=1" alt="">
+                    <p>Aristarco De Samos</p>
+                    <p class="likes">
+                        12
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Pensaba que el mundo que aparentamos en una ilusión pues el verdadero ser no cambia, no se mueve, es único y eterno. Como este juego.</p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <img class="f-logo" src="static/icons/Logo grande.svg" alt="">

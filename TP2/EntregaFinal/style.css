@@ -489,7 +489,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 60px;
     background-color: white;
     position: fixed;
-    background-color: var(--primario-b2);
+    background-color: var(--primario-b3);
     border-right: 1px solid var(--primario-b1);
     overflow: hidden;
     z-index: 50;
@@ -1075,6 +1075,12 @@ main.nav-abierto{
     justify-items: start;
     align-items: start;
 }
+.data-game .boton-primario{
+    background-color: var(--secundario-b1);
+}
+.data-game .boton-primario:hover{
+    background-color: var(--secundario);
+}
 .data-game .boton-primario span{
     background: url("static/icons/compartir.svg");
     width: 25px;
@@ -1103,6 +1109,119 @@ main.nav-abierto{
 }
 
 /* ========================== Fin Data game =====================*/
+
+/* ========================== Comentarios =====================*/
+
+.comentarios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.comentarios .titulo-secundario{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+.comentarios form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.comentarios form .boton-primario{
+    background-color: var(--secundario-b1);
+}
+.comentarios form .boton-primario:hover{
+    background-color: var(--secundario);
+}
+.comentarios form .boton-primario span{
+    width: 25px;
+    height: 25px;
+    background: url("static/icons/heart.svg");
+}
+.comentarios .box-comentario{
+    width: 100%;
+    resize: none;
+    padding: 15px;
+    border: 1px solid var(--secundario-b1);
+    background: var(--secundario-b2);
+    border-radius: 5px;
+}
+.comentarios .box-comentario::placeholder, .comentarios .box-comentario{
+    font-family: var(--nunito-extra-thin);
+    font-size: 18px;
+    color: var(--secundario-w3);
+}
+.comentarios .estrellitas input{
+    display: none;
+}
+.comentarios .estrellitas label{
+    font-size: 25px;
+    color: var(--secundario-w3);
+    transition: all .2s ease;
+    cursor: pointer;
+    float: right;
+}
+.estrellitas input:not(:checked) ~ label:hover, 
+.estrellitas input:not(:checked) ~ label:hover ~ label {
+    color: var(--acento);
+}
+.estrellitas input:checked ~ label{
+    color: var(--acento);
+}
+
+.estrellitas input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+/* ========================== Fin Comentarios =====================*/
+
+/* ========================== Card Comentario =====================*/
+.card-comentario{
+    background-color: var(--secundario-b2);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.card-comentario .data-user{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.card-comentario .comentario{
+    font-family: var(--nunito-extra-thin);
+}
+.data-user p{
+    font-family: var(--nunito-bold);
+    font-size: 20px;
+}
+.data-user .likes{
+    grid-row: span 2;
+    text-align: end;
+}
+
+.data-user .avatar{
+    grid-row: span 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--secundario);
+    object-fit: cover;
+}
+.puntaje .select{
+    color: var(--acento);
+}
+.card-comentario hr{
+    width: 100%;
+    border: 1px solid var(--secundario-b1);
+    margin: 15px 0px;
+}
+
+/* ========================== Fin Card Comentario =====================*/
 
 /* ========================== Loader ============================= */
 
