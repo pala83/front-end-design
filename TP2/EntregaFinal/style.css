@@ -439,6 +439,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
     z-index: 100;
 }
 
+.header .cart{
+    position: relative;
+}
+
+.header .cart span{
+    left: 18px;
+    top: 0;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: var(--acento);
+    font-family: var(--nunito);
+    color: var(--acento-w3);
+    text-align: center;
+}
+
 .inp-busqueda {
     margin: auto;
     display: flex;
@@ -792,10 +809,103 @@ main.nav-abierto{
 }
 .carousel a{
     margin-right: 14px;
+    position: relative;
 }
+
+.carousel a .overlay{
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, .7);
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+    color: var(--primario-w3);
+    font-family: var(--nunito);
+    font-size: 14px;
+}
+
+.overlay .card-titulo{
+    font-family: var(--nunito-bold);
+    font-size: 1.2em;
+}
+
+.carousel a:hover .overlay, .carousel a:hover .overlay .unhover, .carousel a:hover .overlay .hover{
+    transition: .5s;
+}
+
+.carousel a:hover .overlay{
+    height: 120px;
+}
+
+.carousel a:hover .overlay .unhover{
+    opacity: 0;
+}
+
+.carousel a:hover .overlay .hover{
+    opacity: 1;
+
+}
+
+.overlay .hover, .overlay .unhover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.overlay .hover{
+    opacity: 0;
+    padding: 10px;
+}
+.overlay .unhover span{
+    background: url(static/icons/cart\ add.svg) center darkorange;
+    width: 25px;
+    height: 25px;
+}
+
+.overlay .hover p.botonera{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.overlay .btn-cart-add{
+    background: url(static/icons/cart\ add.svg) no-repeat center;
+}
+.overlay .btn-play{
+    background: url(static/icons/play.svg) no-repeat center;
+}
+.overlay .btn-info{
+    background: url(static/icons/info.svg) no-repeat center;
+}
+.overlay .btn-cart-quit{
+    background: url(static/icons/cart\ remove.svg) no-repeat center;
+}
+
+.overlay .hover input[type=button]{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--primario);
+    cursor: pointer;
+    border: none;
+    margin:auto;
+}
+
+.overlay .hover input[type=button]:hover{
+    background-color: var(--primario-b1);
+}
+
 .carousel li{
     display: inline;
 }
+
 .carousel img:first-child{
     margin-left: 0px;
 }
@@ -811,6 +921,9 @@ main.nav-abierto{
 }
   
 
+/* ========================== Fin Carrusel =====================*/
+
+/* ========================== Fin Carrusel =====================*/
 /* ========================== Fin Carrusel =====================*/
 
 /* ========================== Loader ============================= */

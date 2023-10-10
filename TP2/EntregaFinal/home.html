@@ -65,7 +65,7 @@
             <img src="static/icons/heart.svg" alt="">
             <p>Mis Juegos</p>
         </a>
-        <button class="boton-toggle"><img src="static/icons/cart.svg" alt=""></button>
+        <button class="boton-toggle cart"><img src="static/icons/cart.svg" alt=""><span>5</span></button>
     </header>
     <nav class="nav nav-oculto">
         <ul class="categorias">
@@ -157,6 +157,17 @@
             </li>
         </ul>
     </nav>
+    <!--
+    <div class="toggle-cart">
+        <div class="card-cart">
+            <img src="" alt="">
+            <p>Titulo</p>
+            <button>ver</button>
+            <button>quitar</button>
+            <p>$500</p>
+        </div>
+    </div>
+    -->
     <main class="main">
         <h1 class="titulo-principal">Descuentos del mes de septiembre</h1>
         <section class="slider-wrapper">
@@ -242,30 +253,145 @@
             <div class="carousel">
                 <a href="#">
                     <img src="https://images.crazygames.com/games/evowarsio/cover-1586449813403.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Evowarts.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/bloxdhop-io/cover-1671463581901.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Bloxd.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/fish-eat-getting-big/20230619111811/fish-eat-getting-big-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">pescao.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/smash-karts/cover-1690365923966.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Smash Karts.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/crazy-roll-3d/coverundefined-1693299832914.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Crazy Roll.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/color-tap-coloring-by-numbers_16x9/20231003040240/color-tap-coloring-by-numbers_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/laqueus-escape-2---chapter-i_16x9/20230928072151/laqueus-escape-2---chapter-i_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Last Of US.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/dino-world-merge-fight_16x9/20230929094550/dino-world-merge-fight_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/raft-life/20230804113102/raft-life-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
             </div>
             <button id="right"> > </button>
@@ -276,30 +402,148 @@
             <div class="carousel">
                 <a href="#">
                     <img src="https://images.crazygames.com/games/uno-online/cover-1679068977831.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&w=242&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/solitaire-social/thumb-1585078055716.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/foono-online-multiplayer-card-game_16x9/20231002101605/foono-online-multiplayer-card-game_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/spooky-tripeaks/20221010121338/spooky-tripeaks-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/duo-with-friends/20211116161001/duo-with-friends-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/solitrcom.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/solitaire-story-tripeaks-4/cover-1686600269586.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/spider-solitaire-time/cover-1643213064991.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/microsoft-solitaire-collection/cover-1598974383073.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
             </div>
             <button id="right"> > </button>
@@ -310,30 +554,145 @@
             <div class="carousel">
                 <a href="#">
                     <img src="https://images.crazygames.com/games/ev-io/cover-1676998283524.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/thelast-io/20210322181359/thelast-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/agario/20230719092731/agario-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/sploop-io/20210713142850/sploop-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/duckpark-io/cover-1585853392521.jpg?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/stabfish-io/20230102073830/stabfish-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/king-io-world-war/20230629050348/king-io-world-war-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/tyran-io/20220209162110/tyran-io-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/brutalmania-io/cover-1584553430060.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
             </div>
             <button id="right"> > </button>
@@ -344,30 +703,149 @@
             <div class="carousel">
                 <a href="#">
                     <img src="https://images.crazygames.com/house-of-hazards/20200910082214/house-of-hazards-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/soccer-legends-2021/cover-1619606990485.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/puppet-fighter-2-player/20221123094627/puppet-fighter-2-player-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 59.99</p>
+                            <span></span>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Raft Life.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-quit" type="button">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/tennis-masters/20201207104629/tennis-masters-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/wrestle-bros/20230707191522/wrestle-bros-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">ARS$ 19.99</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Color Trap.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">ARS$ 59.99 
+                                <input class="btn-info" type="button">
+                                <input class="btn-cart-add" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/pill-soccer/20230424174048/pill-soccer-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/drunken-boxers/20230131112009/drunken-boxers-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <img src="https://images.crazygames.com/gobattles-2--light-version-/20230414053754/gobattles-2--light-version--cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="img" draggable="false">
+                    <div class="overlay">
+                        <div class="unhover">
+                            <p class="card-titulo">GRATIS</p>
+                        </div>
+                        <div class="hover">
+                            <p class="card-titulo">Dino World.IO</p>
+                            <p>Una breve descripción del juego</p>
+                            <p class="botonera">
+                                <input class="btn-play" type="button">
+                            </p>
+                        </div>
+                    </div>
                 </a>
             </div>
             <button id="right"> > </button>
