@@ -533,11 +533,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     padding: 0px 20px;
     width: 60px;
     height: 34px;
-    /*    
-    padding: 0px 20px;
-    width: 60px;
-    height: 34px;
-*/
 }
 
 .categorias span img{
@@ -593,7 +588,72 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* ========================== Fin Nav =====================*/
 
 /* ========================== Carrito =====================*/
+.toggle-cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 60px;
+    background-color: var(--primario-b3);
+    border-left: 1px solid var(--primario-b1);
+    z-index: 80;
+    width: 400px;
+    color: var(--primario-w3);
+    height: 100vh;
+    overflow-y: auto;
+    transition: transform .5s;
+}
 
+.toggle-cart .card-cart{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 100px auto;
+}
+
+.toggle-cart hr{
+    border: 1px solid var(--primario-b1);
+}
+
+.card-cart img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.card-cart button{
+    padding: 0;
+    background: none;
+    margin: 0;
+}
+
+.card-cart .titulo-terciario{
+    grid-column: span 2;
+    font-size: 25px;
+}
+.card-cart .precio, .pago .precio{
+    font-size: 20px;
+    text-align: right;
+    font-family: var(--nunito-thin);
+}
+.cart-closed{
+    transform: translateX(100%);
+}
+
+.pago h2{
+    font-family: var(--nunito-extra-thin);
+    font-size: 30px;
+}
+
+.pago{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.pago .boton-primario{
+    width: 100%;
+    margin-top: 10px;
+}
 
 /* ========================== Fin Carrito =====================*/
 
