@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="static/icons/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <title>4 en linea</title>
+</head>
+<body>
+    <header class="header">
+        <button id="toggle" class="boton-toggle"><img src="static/icons/toogle.svg" alt=""></button>
+        <div class="inp-busqueda">
+            <input type="text" placeholder="Buscar Juegos">
+            <a class="boton-toggle" href="#"><img src="static/icons/search.svg" alt=""></a>
+        </div>
+        <a class="boton-logo" href="home.html">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3667 14.05L17.1083 16.3667H14.3583L12.5 17.4334L10.6417 16.3667H7.79167L6.63333 14.05L0 10.2167L4.79167 22.0667H20.2083L25 10.2167L18.3667 14.05Z" fill="url(#paint0_radial_194_2257)"/>
+                <path d="M18.3667 14.05L12.5001 17.4333L6.63341 14.05L4.79175 22.0667H20.2084L18.3667 14.05Z" fill="#DF6400"/>
+                <path d="M12.5001 3L20.2084 22.0667H4.79175L12.5001 3Z" fill="url(#paint1_linear_194_2257)"/>
+                <defs>
+                <radialGradient id="paint0_radial_194_2257" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.5 16.142) scale(14.4246)">
+                <stop offset="0.0264561" stop-color="#F9CA00"/>
+                <stop offset="0.2736" stop-color="#F7BF00"/>
+                <stop offset="0.7039" stop-color="#F3A300"/>
+                <stop offset="1" stop-color="#EF8B00"/>
+                </radialGradient>
+                <linearGradient id="paint1_linear_194_2257" x1="12.5002" y1="22.0647" x2="12.5002" y2="3.00191" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F2A000"/>
+                <stop offset="0.2043" stop-color="#F4A900"/>
+                <stop offset="0.9735" stop-color="#F9CA00"/>
+                </linearGradient>
+                </defs>
+            </svg>                
+        </a>
+        <a class="boton-toggle btn-query">
+            <img src="static/icons/heart.svg" alt="">
+            <p>Mis Juegos</p>
+        </a>
+        <button id="cart" class="boton-toggle cart"><img src="static/icons/cart.svg" alt=""><span>5</span></button>
+    </header>
+    <nav class="nav">
+        <ul class="categorias">
+            <li>
+                <span class="avatar" href="#">
+                    <img src="static/icons/avatar.svg" alt="">
+                    <span class="av-name">Fulano detal</span>
+                    <span class="av-mail">fulanito@gmail.com</span>
+                </span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="static/icons/cerrar sesion.svg" alt="">
+                    <span>Cerrar Sesión</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#">
+                    <img src="static/icons/clicker.svg" alt="">
+                    <span>Clicker</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/car.svg" alt="">
+                    <span>Autos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/controller.svg" alt="">
+                    <span>Con mando</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/castle.svg" alt="">
+                    <span>Rol like</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/football.svg" alt="">
+                    <span>Fotball</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/shooting.svg" alt="">
+                    <span>Disparos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/gun.svg" alt="">
+                    <span>Acción</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/flash.svg" alt="">
+                    <span>Flash</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/soccer.svg" alt="">
+                    <span>Tenis</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/pacman.svg" alt="">
+                    <span>.io</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/motorbike.svg" alt="">
+                    <span>Motos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="static/icons/bike.svg" alt="">
+                    <span>Atletismo</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="toggle-cart" class="toggle-cart cart-closed">
+        <div class="card-cart">
+            <img src="https://images.crazygames.com/games/original-classic-solitaire/cover-1671485542236.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="">
+            <p class="titulo-terciario">El llanero Solitario</p>
+            <button class="boton-terciario">ver</button>
+            <button class="boton-terciario">quitar</button>
+            <p class="precio">$500.00</p>
+        </div>
+        <hr>
+        <div class="card-cart">
+            <img src="https://images.crazygames.com/games/spider-solitaire-time/cover-1643213064991.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="">
+            <p class="titulo-terciario">Spider Solitario</p>
+            <button class="boton-terciario">ver</button>
+            <button class="boton-terciario">quitar</button>
+            <p class="precio">$439.00</p>
+        </div>
+        <hr>
+        <div class="card-cart">
+            <img src="https://images.crazygames.com/games/classic-solitaire/cover-1606831793496.png?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="">
+            <p class="titulo-terciario">Un Solitario mas</p>
+            <button class="boton-terciario">ver</button>
+            <button class="boton-terciario">quitar</button>
+            <p class="precio">$34.00</p>
+        </div>
+        <hr>
+        <div class="card-cart">
+            <img src="https://images.crazygames.com/solitaire-dungeon-roguelike_16x9/20230904103614/solitaire-dungeon-roguelike_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="">
+            <p class="titulo-terciario">Solitarie Dungeon</p>
+            <button class="boton-terciario">ver</button>
+            <button class="boton-terciario">quitar</button>
+            <p class="precio">$12.00</p>
+        </div>
+        <hr>
+        <div class="card-cart">
+            <img src="https://images.crazygames.com/solitaire-definitive-edition_16x9/20230905035724/solitaire-definitive-edition_16x9-cover?auto=format%2Ccompress&q=65&cs=strip&ch=DPR&fit=crop" alt="">
+            <p class="titulo-terciario">Grand Theft Solitario</p>
+            <button class="boton-terciario">ver</button>
+            <button class="boton-terciario">quitar</button>
+            <p class="precio">$233.00</p>
+        </div>
+        <hr>
+        <div class="pago">
+            <h2>TOTAL:</h2>
+            <p class="precio">$1218.00</p>
+            <button class="boton-primario">Pagar</button>
+        </div>
+    </div>
+    <main class="main nav-abierto">
+        <div class="breadcumbs">
+            <a href="home.html" class="link">Home</a>
+            <span> > </span>
+            <a href="#" class="link">4 en linea</a>
+        </div>
+        <div class="juego">
+            <div id="canvas" class="juego-canvas oculto">
+                <canvas id="juego-canvas" height="530" width= "930"></canvas>
+            </div>
+            <video id="videoJuego" autoplay muted loop style="overflow: hidden;">
+                <source src="./static/videos/android_vs_apple.mp4" type="video/mp4">
+            </video>
+            <div id="overlayJuego" class="overlay-play">
+                <form id="game-form" class="game-form" action="">
+                    <div class="inicio-juego">
+                        <p>Cuatro en linea</p>
+                        <p>Android vs. Apple</p>
+                        <button id="jugar" type="submit" class="boton-primario"> <img src="static/icons/play.svg" alt=""> </button>
+                    </div>
+                    <div class="opciones-juego">
+                        <p>Seleccione el tipo de juego:</p>
+                        <label class="seleccionado">
+                            <input type="radio" name="numero-en-linea" value="4" checked> 4 en linea
+                        </label>
+                        <label>
+                            <input type="radio" name="numero-en-linea" value="5"> 5 en linea
+                        </label>
+                        <label>
+                            <input type="radio" name="numero-en-linea" value="6"> 6 en linea
+                        </label>
+                        <label>
+                            <input type="radio" name="numero-en-linea" value="7"> 7 en linea
+                        </label>
+                    </div>
+                    <div class="fichas">
+                        <label class="seleccionado">
+                            <input type="radio" name="jugador-1" value="1" checked>
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-1" value="2">
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-1" value="3">
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-1" value="4">
+                        </label>
+                    </div>
+                    <div class="fichas">
+                        <label class="seleccionado">
+                            <input type="radio" name="jugador-2" value="1" checked>
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-2" value="2">
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-2" value="3">
+                        </label>
+                        <label>
+                            <input type="radio" name="jugador-2" value="4">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <h3 class="titulo-terciario">Aprende a jugar</h3>
+            <div class="videos">
+                <iframe src="https://www.youtube.com/embed/JBSbiilzg9U" title="Cómo se juega - Conecta 4 o Cuatro en Línea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/YqqcNjQMX18" title="The Best Strategy to Win at Connect 4! (Odd Even Strategy)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/pyV76e86DNw" title="4 en línea, Mario Vaira vs Matías Sapor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VAa9TExD_X8" title="CONECTA 4 ¿Cómo se JUEGA? 4 en LINEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/fN4s41CqOkI" title="Como ganar fácilmente (4 en línea)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <section class="contenedor-game data-game">
+            <h2 class="titulo-secundario">4 en linea</h2>
+            <h2 class="titulo-secundario">Controles</h2>
+            <button class="boton-primario"><span></span>Compartir</button>
+            <div class="controles">
+                <img src="static/icons/control-left-click.svg" alt="click izquierdo">
+                <img src="static/icons/control-move-maus.svg" alt="mause">
+                <img src="static/icons/control-enter.svg" alt="tecla enter">
+                <img src="static/icons/control-wasd.svg" alt="teclas w a s d">
+                <img src="static/icons/control-arrows.svg" alt="teclas flechas d edireccion">
+            </div>
+            <div class="metricas">
+                <p class="categoria">Calificación:</p>
+                <p class="valor"><span>9,3</span> (790.631 de votos)</p>
+                <p class="categoria">Publicado en:</p>
+                <p class="valor">septiembre de 2023</p>
+                <p class="categoria">Ultima actualización:</p>
+                <p class="valor">septiembre de 2023</p>
+                <p class="categoria">Tecnología:</p>
+                <p class="valor">HTML5</p>
+                <p class="categoria">Plataforma:</p>
+                <p class="valor">Navegador</p>
+            </div>
+
+            <p class="descripcion">¡Pelea entre sistemas operativos!, ¿quien ganara?, ¿el manzano o el muñeco verde?, ¿mejor cámara, o mejor batería?, ¿el inaccesible, o el económico?, ¿el de unica marca, o el que tiene mas marcas que un paquete de fideos?, ¿el que es seguro, o el que seguro me lo roban?, ¿Linux abierto, o Linux cerrado?. Semejante batalla solo se podrá determinar en un enfrentamiento jugando 4 en linea.</p>
+            <hr>
+        </section>
+        <div class="contenedor-game comentarios">
+            <form action="#">
+                <label for="comentario" class="titulo-secundario">Deja tu comentario
+                    <span class="estrellitas">
+                        <input type="radio" name="rate" id="rate-5">
+                        <label for="rate-5" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-4">
+                        <label for="rate-4" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-3">
+                        <label for="rate-3" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-2">
+                        <label for="rate-2" class="fa fa-star"></label>
+                        <input type="radio" name="rate" id="rate-1">
+                        <label for="rate-1" class="fa fa-star"></label>
+                    </span>
+                </label>
+                <textarea class="box-comentario" placeholder="Comentario..." name="comentario" id=""></textarea>
+                <button type="submit" class="boton-primario"><span></span>Comentar</button>
+            </form>
+            <h2 class="titulo-secundario">Últimos comentario</h2>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" alt="">
+                    <p>Karen</p>
+                    <p class="likes">
+                        500
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Un juego muy bonito</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="">
+                    <p>Muriel</p>
+                    <p class="likes">
+                        12022
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">En mi vida jugué semejante juego</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://randomuser.me/api/portraits/men/29.jpg" alt="">
+                    <p>Raúl</p>
+                    <p class="likes">
+                        92773
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">¿Se supone que el juego tenga la opción de "quiero vale 4" cuando se juntan 4 fichas en linea? o es un bug?</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://study.com/cimages/multimages/16/depictionanaxagoras.png" alt="">
+                    <p>Anaxagoras</p>
+                    <p class="likes">
+                        45
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Si me engañas una vez, tuya es la culpa; si me engañas dos, es mía; si alguien me gana en este juego, lo desinstalo.</p>
+            </div>
+            <div class="card-comentario">
+                <div class="data-user">
+                    <img class="avatar" src="https://i0.wp.com/wikisabio.com/wp-content/uploads/2017/06/550477db-8d2c-4ed2-9742-aa046d464419.jpg?fit=242%2C300&ssl=1" alt="">
+                    <p>Aristarco De Samos</p>
+                    <p class="likes">
+                        12
+                        <i class="fa fa-heart"></i>
+                    </p>
+                    <span class="puntaje">
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                        <i class="fa fa-star select"></i>
+                    </span>
+                </div>
+                <hr>
+                <p class="comentario">Pensaba que el mundo que aparentamos en una ilusión pues el verdadero ser no cambia, no se mueve, es único y eterno. Como este juego.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <img class="f-logo" src="static/icons/Logo grande.svg" alt="">
+        <section class="f-categoria">
+            <h3 class="parrafo-resaltado">Categorías</h3>
+            <a class="boton-terciario" href="#">¿Quiénes somos?</a>
+            <a class="boton-terciario" href="#">Comunidad</a>
+            <a class="boton-terciario" href="#">Publicidad</a>
+            <a class="boton-terciario" href="#">Afiliación</a>
+            <a class="boton-terciario" href="#">Contacto</a>
+            <a class="boton-terciario" href="#">Privacidad</a>
+            <a class="boton-terciario" href="#">Aviso legal</a>
+            <a class="boton-terciario" href="#">Cookies</a>
+        </section>
+        <section class="f-categoria">
+            <h3 class="parrafo-resaltado">Recursos</h3>
+            <a class="boton-terciario" href="#">Apoyar al creador</a>
+            <a class="boton-terciario" href="#">Distribuidor</a>
+            <a class="boton-terciario" href="#">Empleo</a>
+            <a class="boton-terciario" href="#">Compañía</a>
+            <a class="boton-terciario" href="#">Servicios en linea</a>
+            <a class="boton-terciario" href="#">Reglas de la comunidad</a>
+            <a class="boton-terciario" href="#">Devoluciones</a>
+        </section>
+        <section class="f-categoria">
+            <h3 class="parrafo-resaltado">Creador</h3>
+            <a class="boton-terciario" href="#">Contacto</a>
+            <a class="boton-terciario" href="#">Portfolio</a>
+            <a class="boton-terciario" href="#">Redes</a>
+            <a class="boton-terciario" href="#">Mas contactos</a>
+        </section>
+    </footer>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/juego/main.js"></script>
+    <script src="static/js/juego/configuracion-inicial.js"></script>
+    <script src="static/js/juego/Juego.js"></script>
+    <script src="static/js/juego/Figura.js"></script>
+    <script src="static/js/juego/Tablero.js"></script>
+    <script src="static/js/juego/Ficha.js"></script>
+</body>
+</html>
