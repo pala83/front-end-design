@@ -11,19 +11,22 @@ class Ficha extends Figura{
     }
     draw() {
 
-        this.ctx.beginPath();
         //super.draw();
+        this.ctx.beginPath();
         this.ctx.arc(this.x, this.y, this.radio, 0, Math.PI*2);
         this.ctx.fillStyle = this.color;
         this.ctx.fill();
         this.ctx.drawImage(this.img, this.x-this.radio-6, this.y-this.radio-6);
         this.ctx.closePath();
-        this.img.onload = ()=>{};
+        this.img.onload = ()=>{
+        };
         console.log("imagen: ", this.img);
 
     }
     getImagen(jugador){
         if(jugador===1)
             this.img.src = `fichas/android${this.tipo}.png`;
+        else
+            this.img.src = `fichas/ios${this.tipo}.png`
     }
 }
