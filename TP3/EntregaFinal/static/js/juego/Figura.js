@@ -1,25 +1,46 @@
-"use strict"
-class Figura{
-    constructor(x, y, color, ctx){
-        this.x = x;
-        this.y = y;
-        this.color = color;
-        this.ctx = ctx;
+class Figura {
+
+    constructor(posX, posY, fill, context) {
+        this.posX = posX;
+        this.posY = posY;
+        this.fill = fill;
+        this.context = context;
+        this.resaltado = false;
     }
 
-    setColor(color){
-        this.color = color;
+    setFill(fill) {
+        this.fill = fill;
     }
-    getPosicion(){
+
+    getPosition() {
         return {
-            x: this.x,
-            y: this.y,
+            x: this.getPosX(),
+            y: this.getPosY()
         };
     }
-    getColor(){
-        return this.color;
+    setPosition(x,y){
+        this.posX = x ; 
+        this.posY = y ; 
     }
-    draw(){
-        this.ctx.fillStyle = this.color;
+
+    getPosX() {
+        return this.posX;
     }
+
+    getPosY() {
+        return this.posY;
+    }
+
+    getFill() {
+        return this.fill;
+    }
+
+    draw() {
+        this.context.fillStyle = this.fill;
+    }
+
+    setResaltado (resaltado){
+        this.resaltado = resaltado;
+    }
+    isPointInside(x,y){}
 }

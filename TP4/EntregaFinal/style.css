@@ -225,7 +225,6 @@ body {
     width: 20%;
 }
 
-/*SECCION 2*/
 .fondoVioleta {
     position: absolute;
     top: 775px;
@@ -285,7 +284,6 @@ body {
     z-index: -2;
 }
 
-/*SECCION 3*/
 .fondoBlanco {
     position: absolute;
     top: 1480px;
@@ -318,7 +316,6 @@ body {
     animation-delay: .5s;
 }
 
-/*SECCION 4*/
 .fondoGhost {
     position: absolute;
     top: 2500px;
@@ -368,7 +365,6 @@ body {
     transform: rotate3d(1, 1, 1, 45deg);
 }
 
-/*SECCION 5*/
 .vengadoresAcompañando {
     position: absolute;
     top: 3240px;
@@ -426,7 +422,7 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-50%); /* Desplazamiento horizontal para repetir la imagen */
+        transform: translateX(-50%); 
     }
   }
 
@@ -465,7 +461,6 @@ body {
     z-index: -3;
 }
 
-/*SECCION 6*/
 .fondoBlancoS6 {
     position: absolute;
     top: 3883px;
@@ -566,7 +561,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    /*define la separación entre  los elementos uno debajo del otro.*/
     opacity: 0;
     transition: all 0.2s ease-in;
 }
@@ -757,7 +751,6 @@ body {
     z-index: -3;
 }
 
-/*SECCION 10*/
 footer {
     position: absolute;
     height: 678px;
